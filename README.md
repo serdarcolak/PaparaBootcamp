@@ -49,6 +49,10 @@ Platform, kullanıcıların alışveriş yaptıkça puan kazandığı bir sadaka
 - RabbitMQ (Mesaj Kuyruğu)
 - Redis (Uzak Veri Depolama)
 
+### Postman Dokümantasyon
+
+https://documenter.getpostman.com/view/16084171/2sA3s3GqWp
+
 
 *******************************************************************************************************
 
