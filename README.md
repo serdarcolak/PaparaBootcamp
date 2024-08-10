@@ -6,6 +6,50 @@ DigitalSalesPlatform API
 Proje, dijital ürünler ve ürün lisansları satan bir platform geliştirilmesiniamaçlamaktadır. Bu platform, Android, iOS ve Web olmak üzere üç farklıkanal üzerinden satış yapacaktır. Kullanıcılar, sisteme kayıt olarak dijital ürün ve lisansları satın alabilirler.
 Platform, kullanıcıların alışveriş yaptıkça puan kazandığı bir sadakatsistemi ile çalışmaktadır. Kullanıcılar kazandıkları puanları bir sonrakialışverişlerinde indirim olarak kullanabilirler. Ayrıca, kupon sistemi sayesinde hediye kuponları ile sepet tutarını düşürebilirler. Admin kullanıcıları tüm yetkilere sahiptir. Ürün, Kategori, Kupon, Sipariş, Kullanıcı oluşturma, güncelleme, silme, görüntüleme işlemlerini yapabilirler.
 
+### Kullanıcı İşlemleri
+- Kullanıcılar: normal kullanıcı ve admin.
+- Kayıt ve login işlemleri JWT token ile yapılacak.
+- Dijital cüzdan kullanılarak anlık ödeme işlemleri yapılacak.
+- Admin kullanıcılar kullanıcı ekleme, silme ve güncelleme işlemleri yapabilir.
+
+### Ürün İşlemleri
+- Admin kullanıcılar tarafından ürün ekleme, silme, güncelleme işlemleri yapılacak.
+- Ürünler kategori bazlı listelenebilecek.
+- Ürünler üzerinde puan kazandırma yüzdesi ve max puan tutarı olacak.
+
+### Kupon
+- Admin kullanıcılar kupon oluşturabilir, listeleyebilir ve silebilir.
+- Kullanıcılar kupon kodlarını kullanarak indirim yapabilir.
+- Kuponlar tek kullanımlık ve geçerlilik tarihi ile sınırlı olacak.
+
+### Raporlama
+- Sipariş ve sipariş detay tabloları üzerinden raporlama.
+
+### Veritabanı Modelleri
+- Kullanıcı: ad, soyad, email, role, şifre, statü, dijital cüzdan bilgileri, puan bakiyesi, vs.
+- Kategori: adı, url, tags, vs.
+- Ürün: kategori, adı, özellikleri, açıklama, aktiflik, puan kazandırma yüzdesi, max puan tutarı.
+- Ürün Kategori Map: kategoriId, ürünId (Many-To-Many ilişki).
+- Sipariş: sepet tutarı, kupon tutarı, kupon kodu, puan tutarı, vs.
+- Sipariş Detay: sepetteki ürün detay bilgileri, vs.
+
+### API İşlemleri
+- Kullanıcı işlemleri: kayıt olma, login, güncelleme, silme, JWT token ile yetkilendirme.
+- Ürün işlemleri: ekleme, güncelleme, silme, listeleme.
+- Kategori işlemleri: ekleme, güncelleme, silme (kategoriye bağlı ürün varsa silinemez), listeleme.
+- Kupon işlemleri: oluşturma, listeleme, silme.
+- Sipariş işlemleri: oluşturma, aktif siparişler, geçmiş siparişler.
+- Puan sorgulama ve kullanma.
+
+### Kullanılan Teknolojiler
+- Veri tabanı: PostgreSQL, MSSQL
+- JWT token (Yetkilendirme)
+- EF-Core Repository Pattern ve UnitOfWork
+- Swagger (API dokümantasyonu)
+- RabbitMQ (Mesaj Kuyruğu)
+- Redis (Uzak Veri Depolama)
+
+
 *******************************************************************************************************
 
 ### Projeyi Ayağa Kaldırma
