@@ -1,5 +1,5 @@
 
-## DigitalSalesPlatform API
+## Digital Sales Platform API
 
 ### Proje Hakkında
 
