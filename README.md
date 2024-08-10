@@ -107,3 +107,44 @@ Aşağıdaki migration komutlarını çalıştırıyoruz.
 
      DB guncelleme PostgreSQL Server
      dotnet ef database update --project "./DigitalSalesPlatform.Api" --startup-project "DigitalSalesPlatform.Api/" --context DigitalSalesPlatformDbContext
+
+
+*******************************************************************************************************
+
+### Swagger
+
+![run01](https://github.com/user-attachments/assets/822f0174-65f0-48bd-9fa4-c167dd8668fa)
+
+![run02](https://github.com/user-attachments/assets/9ec447ac-59b6-4500-b858-04882c81796e)
+
+![run03](https://github.com/user-attachments/assets/d5eb1088-ee88-49ac-8845-37a5037c1e6f)
+
+*******************************************************************************************************
+
+### Database
+
+![mssqldb](https://github.com/user-attachments/assets/24e65020-742e-4d41-9fa3-61bcb11d6770)
+
+*******************************************************************************************************
+
+### RabbitMQ
+
+![rabbitmq](https://github.com/user-attachments/assets/668a3eeb-af73-4a33-9f28-c5b28a3dc74c)
+
+*******************************************************************************************************
+
+### Kullanıcı register olduğunda gönderilen email
+
+![email-foto](https://github.com/user-attachments/assets/a10af55c-37b3-4b5e-8298-fe45a624f315)
+
+*******************************************************************************************************
+
+### Redis
+
+![redis](https://github.com/user-attachments/assets/e3ec2dd0-7453-477f-9e38-9cf34a98cdbc)
+
+
+
+
+
+     
