@@ -1,6 +1,13 @@
 
 DigitalSalesPlatform API
 
+### Proje Hakkında
+
+Proje, dijital ürünler ve ürün lisansları satan bir platform geliştirilmesiniamaçlamaktadır. Bu platform, Android, iOS ve Web olmak üzere üç farklıkanal üzerinden satış yapacaktır. Kullanıcılar, sisteme kayıt olarak dijital ürün ve lisansları satın alabilirler.
+Platform, kullanıcıların alışveriş yaptıkça puan kazandığı bir sadakatsistemi ile çalışmaktadır. Kullanıcılar kazandıkları puanları bir sonrakialışverişlerinde indirim olarak kullanabilirler. Ayrıca, kupon sistemi sayesinde hediye kuponları ile sepet tutarını düşürebilirler. Admin kullanıcıları tüm yetkilere sahiptir. Ürün, Kategori, Kupon, Sipariş, Kullanıcı oluşturma, güncelleme, silme, görüntüleme işlemlerini yapabilirler.
+
+*******************************************************************************************************
+
 ### Projeyi Ayağa Kaldırma
 
 #### Docker
