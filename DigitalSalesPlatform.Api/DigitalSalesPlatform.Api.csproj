@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="AutoMapper" Version="11.0.1" />
+        <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.2" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0"/>
+        <PackageReference Include="Microsoft.IO.RecyclableMemoryStream" Version="2.3.2" />
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.5" />
+        <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="7.0.17" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\DigitalSalesPlatform.Base\DigitalSalesPlatform.Base.csproj" />
+      <ProjectReference Include="..\DigitalSalesPlatform.Business\DigitalSalesPlatform.Business.csproj" />
+      <ProjectReference Include="..\DigitalSalesPlatform.Data\DigitalSalesPlatform.Data.csproj" />
+      <ProjectReference Include="..\DigitalSalesPlatform.Schema\DigitalSalesPlatform.Schema.csproj" />
+    </ItemGroup>
+
+</Project>

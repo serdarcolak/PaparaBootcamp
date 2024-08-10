@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\DigitalSalesPlatform.Base\DigitalSalesPlatform.Base.csproj" />
+      <ProjectReference Include="..\DigitalSalesPlatform.Data\DigitalSalesPlatform.Data.csproj" />
+    </ItemGroup>
+
+</Project>

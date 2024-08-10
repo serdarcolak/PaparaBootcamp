@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "bfWdfVdfVR7s86XAnr0XtnLnSzwBcrfiHYKFLDnswic=",
+  "Source": "DigitalSalesPlatform.Api",
+  "BasePath": "_content/DigitalSalesPlatform.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
