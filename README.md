@@ -8,30 +8,30 @@ Platform, kullanıcıların alışveriş yaptıkça puan kazandığı bir sadaka
 
 ### Kullanıcı İşlemleri
 - Kullanıcılar: normal kullanıcı ve admin.
-- Kayıt ve login işlemleri JWT token ile yapılacak.
-- Dijital cüzdan kullanılarak anlık ödeme işlemleri yapılacak.
+- Kayıt ve login işlemleri JWT token ile yapılmaktadır..
+- Dijital cüzdan kullanılarak anlık ödeme işlemleri yapılmaktadır.
 - Admin kullanıcılar kullanıcı ekleme, silme ve güncelleme işlemleri yapabilir.
 
 ### Ürün İşlemleri
-- Admin kullanıcılar tarafından ürün ekleme, silme, güncelleme işlemleri yapılacak.
-- Ürünler kategori bazlı listelenebilecek.
-- Ürünler üzerinde puan kazandırma yüzdesi ve max puan tutarı olacak.
+- Admin kullanıcılar tarafından ürün ekleme, silme, güncelleme işlemleri yapılmaktadır.
+- Ürünler kategori bazlı listelenebilmektedir.
+- Ürünler üzerinde puan kazandırma yüzdesi ve max puan tutarı vardır.
 
 ### Kupon
 - Admin kullanıcılar kupon oluşturabilir, listeleyebilir ve silebilir.
 - Kullanıcılar kupon kodlarını kullanarak indirim yapabilir.
-- Kuponlar tek kullanımlık ve geçerlilik tarihi ile sınırlı olacak.
+- Kuponlar tek kullanımlık ve geçerlilik tarihi ile sınırlıdır.
 
 ### Raporlama
-- Sipariş ve sipariş detay tabloları üzerinden raporlama.
+- Sipariş ve sipariş detay tabloları üzerinden raporlanmaktadır.
 
 ### Veritabanı Modelleri
-- Kullanıcı: ad, soyad, email, role, şifre, statü, dijital cüzdan bilgileri, puan bakiyesi, vs.
-- Kategori: adı, url, tags, vs.
-- Ürün: kategori, adı, özellikleri, açıklama, aktiflik, puan kazandırma yüzdesi, max puan tutarı.
+- Kullanıcı: ad, soyad, email, role, şifre, statü, dijital cüzdan bilgileri, puan bakiyesi.
+- Kategori: adı, url, tags, statü.
+- Ürün: kategori, adı, özellikleri, fiyat, statü, stok, puan kazandırma yüzdesi, max puan tutarı.
 - Ürün Kategori Map: kategoriId, ürünId (Many-To-Many ilişki).
-- Sipariş: sepet tutarı, kupon tutarı, kupon kodu, puan tutarı, vs.
-- Sipariş Detay: sepetteki ürün detay bilgileri, vs.
+- Sipariş: kullanıcıId, sipariş numarası, sepet tutarı, dijital cüzdan, kupon tutarı, kupon kodu, puan tutarı, sipariş tarihi.
+- Sipariş Detay: siparişId, ürünId, miktar, fiyat, statü.
 
 ### API İşlemleri
 - Kullanıcı işlemleri: kayıt olma, login, güncelleme, silme, JWT token ile yetkilendirme.
