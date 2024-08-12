@@ -58,11 +58,11 @@ https://documenter.getpostman.com/view/16084171/2sA3s3GqWp
 
 ### Projeyi Ayağa Kaldırma
 
-#### Docker
-Docker üzerinden kolayca Redis ve RabbitMQ kurulumu yapabilirsiniz.
-
 ### .Net Projesini Restore Edelim
     dotnet restore
+
+#### Docker
+Docker üzerinden kolayca Redis ve RabbitMQ kurulumu yapabilirsiniz.
 
 #### RabbitMQ CMD Komutu 
     docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 -e RABBITMQ_DEFAULT_USER=your_username -e RABBITMQ_DEFAULT_PASS=your_password rabbitmq:3.13-management
